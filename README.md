@@ -30,7 +30,7 @@ terraform destroy
 The structure of a terraform file is as follows.
 
 1. We have a provider at the start of the terraform file.
-```json
+```
 provider "aws" {
   region = "ap-south-1"
   # bad practice to hardcode access keys here
@@ -49,7 +49,7 @@ provider "aws" {
 
 2. Following the definition we have resource definition as follows:
 
-```json
+```
 resource "<provider>_<resource>" "name" {
    [config options ...]
    key="value"
