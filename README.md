@@ -1,3 +1,7 @@
+# Introduction
+
+Infrastructure automation to provision and manage resources in any cloud or data center. IaC tool with declarative nature. 
+
 # Important Commands
 
 This command pulls any provider code that is required by terraform.
@@ -35,6 +39,12 @@ This command is used to reads an output variable from a Terraform state file and
 ```
 terraform output
 trrraform refresh
+```
+
+Targeting Resources
+```
+terraform apply -target aws_instance.web-server-instance --auto-approve
+terraform destroy -target aws_instance.web-server-instance --auto-approve   
 ```
 
 # Structure
