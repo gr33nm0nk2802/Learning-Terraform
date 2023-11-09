@@ -25,6 +25,18 @@ This is the command to destroy our Infrastructure completely based on our terraf
 terraform destroy
 ```
 
+This command is used to list down the current terraform state.
+```
+terraform state list
+terraform state show <aws_eip.one> 
+```
+
+This command is used to reads an output variable from a Terraform state file and prints the value.
+```
+terraform output
+trrraform refresh
+```
+
 # Structure
 
 The structure of a terraform file is as follows.
